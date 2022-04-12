@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- name: Yagnik Virani
+     ID  : A00227162
+-->
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity"
+    style="@style/Mode">
+
+    <!--for canada score up    -->
+    <Button
+        android:id="@+id/Canada_buttonUp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="52dp"
+        android:text="↑"
+        app:layout_constraintEnd_toStartOf="@+id/Canada_textView"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/Canada_Buttons"/>
+
+    <!--for canada textview    -->
+    <TextView
+        android:id="@+id/Canada_textView"
+        style="@style/Canada_textview"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="60dp"
+        android:text="Canada"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--for canada score textview     -->
+    <TextView
+        android:id="@+id/Canada_score"
+        style="@style/Canada_textview"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="60dp"
+        android:text="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Canada_textView" />
+
+
+    <!--for canada score down    -->
+    <Button
+        android:id="@+id/Canada_buttonDown"
+        style="@style/Canada_Buttons"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="20dp"
+        android:text="↓"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Canada_buttonUp" />
+
+    <!--for India textview   -->
+    <TextView
+        android:id="@+id/India_textView"
+        style="@style/India_textview"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="60dp"
+        android:text="India"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Canada_score" />
+
+
+    <!--for India score up    -->
+    <TextView
+        android:id="@+id/India_score"
+        style="@style/India_textview"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="60dp"
+        android:text="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/India_textView" />
+
+
+    <!--for India score up    -->
+    <Button
+        android:id="@+id/India_buttonUp"
+        style="@style/India_Buttons"
+        android:layout_marginTop="236dp"
+        android:layout_marginEnd="52dp"
+        android:text="↑"
+        app:layout_constraintEnd_toStartOf="@+id/India_textView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--for India score down    -->
+    <Button
+        android:id="@+id/India_buttonDown"
+        style="@style/India_Buttons"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="24dp"
+        android:text="↓"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/India_buttonUp" />
+
+    <LinearLayout
+        android:id="@+id/linearLayoutCanada"
+        android:layout_width="393dp"
+        android:layout_height="99dp"
+        android:background="#F6E8D5"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Score_textView">
+
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="369dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+
+                android:layout_width="74dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="1"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:layout_width="74dp"
+                android:layout_height="wrap_content"
+                android:text="2"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:layout_width="74dp"
+                android:layout_height="wrap_content"
+                android:text="3"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+
+                android:layout_width="74dp"
+                android:layout_height="wrap_content"
+                android:text="4"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:layout_width="74dp"
+                android:layout_height="wrap_content"
+                android:text="6"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+
+        </RadioGroup>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/Score_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="#F6E8D5"
+        android:text=" Score ↑ ↓ by: "
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.427"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/India_buttonDown" />
+
+
+
+
+</android.support.constraint.ConstraintLayout>

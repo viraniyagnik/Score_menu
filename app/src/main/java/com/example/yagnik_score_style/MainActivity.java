@@ -1,0 +1,100 @@
+package com.example.yagnik_score_style;
+
+
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.RadioGroup;
+import android.widget.TextView;
+
+public class MainActivity extends AppCompatActivity implements RadioGroup.OnCheckedChangeListener, View.OnClickListener  {
+    //declare all variable for both teams India and Canada
+    private TextView teamCanadaTextView;
+    private TextView teamIndiaTextView;
+
+    private int Rise;
+    private int teamCanadaScore;
+    private int teamIndiaScore;
+
+    @Override
+    //onCreate method for activity_main layout
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        teamCanadaScore = 0;
+        teamIndiaScore = 0;
+
+        //radioGroup getviewByid
+        RadioGroup radioGroup = findViewById(R.id.radio_group);
+        radioGroup.setOnCheckedChangeListener(this);
+
+        //create variable for all buttons and get view by id
+        Button CanadaupButton = findViewById(R.id.Canada_buttonUp);
+        Button CanadadownButton = findViewById(R.id.Canada_buttonDown);
+        Button IndiaupButton = findViewById(R.id.India_buttonUp);
+        Button IndiadownButton = findViewById(R.id.India_buttonDown);
+        // to set on click method for all butttons
+        CanadaupButton.setOnClickListener(this);
+        CanadadownButton.setOnClickListener(this);
+        IndiaupButton.setOnClickListener(this);
+        IndiadownButton.setOnClickListener(this);
+
+        //Get both team textview by id
+        teamCanadaTextView = findViewById(R.id.Canada_score);
+        teamIndiaTextView = findViewById(R.id.India_score);
+
+        //To set both team score
+        teamIndiaTextView.setText(Integer.toString(teamIndiaScore));
+        teamCanadaTextView.setText(Integer.toString(teamCanadaScore));
+
+
+    }
+
+    @Override
+    public void onCheckedChanged(RadioGroup radioGroup, int i) {
+        //cases for all option to increase and decrease score
+        switch (i){
+            case 1:
+                Rise = 1;
+                break;
+            case 2:
+                Rise = 2;
+                break;
+            case 3:
+                Rise = 3;
+                break;
+            case 4:
+                Rise = 4;
+                break;
+            case 5:
+                Rise = 6;
+                break;
+        }
+    }
+
+    @Override
+    public void onClick(View view) {
+        int id = view.getId();
+        //cases for all options such as increase and decrease for both teams
+        switch (id){
+            case R.id.India_buttonUp:
+                teamIndiaScore += Rise;
+                teamIndiaTextView.setText(Integer.toString(teamIndiaScore));
+                break;
+            case R.id.India_buttonDown:
+                teamIndiaScore -= Rise;
+                teamIndiaTextView.setText(Integer.toString(teamIndiaScore));
+                break;
+            case R.id.Canada_buttonUp:
+                teamCanadaScore += Rise;
+                teamCanadaTextView.setText(Integer.toString(teamCanadaScore));
+                break;
+            case R.id.Canada_buttonDown:
+                teamCanadaScore -= Rise;
+                teamCanadaTextView.setText(Integer.toString(teamCanadaScore));
+                break;
+        }
+    }
+}

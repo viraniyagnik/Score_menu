@@ -1,0 +1,55 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Yagnik_Score_Style" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryDark">@color/purple_700</item>
+        <item name="colorAccent">@color/teal_200</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <!-- style for Day mode -->
+    <style name="Mode">
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <!-- Style for canada textview -->
+    <style name="Canada_textview" parent="TextAppearance.AppCompat">
+        <item name="android:background">#F50057</item>
+        <item name="android:textColor">"@color/white"</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Style for canada buttons -->
+    <style name="Canada_Buttons" parent="TextAppearance.AppCompat">
+        <item name="android:background">#F50057</item>
+        <item name="android:textColor">"@color/white"</item>
+        <item name="android:textSize">34sp</item>
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Style for india textview -->
+    <style name="India_textview" parent="TextAppearance.AppCompat">
+        <item name="android:background">#00E676</item>
+        <item name="android:textColor">"@color/white"</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Style for India buttons -->
+    <style name="India_Buttons" parent="TextAppearance.AppCompat">
+        <item name="android:background">#00E676</item>
+        <item name="android:textColor">"@color/white"</item>
+        <item name="android:textSize">34sp</item>
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+</resources>

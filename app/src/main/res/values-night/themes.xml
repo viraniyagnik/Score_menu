@@ -1,0 +1,56 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Yagnik_Score_Style" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">#F6E8D5</item>
+        <item name="colorPrimaryDark">@color/purple_700</item>
+        <item name="colorAccent">@color/teal_200</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <!-- style for Night mode -->
+    <style name="Mode">
+        <item name="android:background">@color/black</item>
+    </style>
+
+    <!-- Style for Canada textview -->
+    <style name="Canada_textview" parent="TextAppearance.AppCompat">
+        <item name="android:background">#FFFFFF</item>
+        <item name="android:textColor">#F50057</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+    <!-- Style for Canada buttons -->
+    <style name="Canada_Buttons" parent="TextAppearance.AppCompat">
+        <item name="android:background">#FFFFFF</item>
+        <item name="android:textColor">#F50057</item>
+        <item name="android:textSize">34sp</item>
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Style for india textview -->
+    <style name="India_textview" parent="TextAppearance.AppCompat">
+        <item name="android:background">#FFFFFF</item>
+        <item name="android:textColor">#00E676</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Style for India buttons -->
+    <style name="India_Buttons" parent="TextAppearance.AppCompat">
+        <item name="android:background">#FFFFFF</item>
+        <item name="android:textColor">#00E676</item>
+        <item name="android:textSize">34sp</item>
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+</resources>
