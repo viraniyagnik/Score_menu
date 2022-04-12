@@ -1,3 +1,23 @@
 <resources>
+    <!-- name: Yagnik Virani
+     ID  : A00227162
+-->
     <string name="app_name">Yagnik_Score_Style</string>
+
+
+    <string name="Scores" translatable="false">0</string>
+    <string name="Increase_values" translatable="false">1</string>
+
+    <string-array name="increase_values">
+        <item>@string/Scores</item>
+        <item>@string/Increase_values</item>
+    </string-array>
+
+    <string-array name="increase_keys">
+        <item>Score</item>
+        <item>Increase values</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
 </resources>

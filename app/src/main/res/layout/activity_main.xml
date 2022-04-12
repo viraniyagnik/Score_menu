@@ -11,16 +11,17 @@
     style="@style/Mode">
 
     <!--for canada score up    -->
-    <Button
-        android:id="@+id/Canada_buttonUp"
-        android:layout_marginTop="44dp"
-        android:layout_marginEnd="52dp"
-        android:text="↑"
-        app:layout_constraintEnd_toStartOf="@+id/Canada_textView"
-        app:layout_constraintTop_toTopOf="parent"
-        style="@style/Canada_Buttons"/>
 
     <!--for canada textview    -->
+    <Button
+        android:id="@+id/Canada_buttonUp"
+        style="@style/Canada_Buttons"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="68dp"
+        android:text="↑"
+        app:layout_constraintEnd_toStartOf="@+id/Canada_textView"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:id="@+id/Canada_textView"
         style="@style/Canada_textview"
@@ -74,16 +75,17 @@
 
 
     <!--for India score up    -->
+
+    <!--for India score down    -->
     <Button
         android:id="@+id/India_buttonUp"
         style="@style/India_Buttons"
-        android:layout_marginTop="236dp"
-        android:layout_marginEnd="52dp"
+        android:layout_marginTop="232dp"
+        android:layout_marginEnd="68dp"
         android:text="↑"
         app:layout_constraintEnd_toStartOf="@+id/India_textView"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <!--for India score down    -->
     <Button
         android:id="@+id/India_buttonDown"
         style="@style/India_Buttons"

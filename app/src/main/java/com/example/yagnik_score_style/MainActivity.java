@@ -1,14 +1,20 @@
 package com.example.yagnik_score_style;
+//name: Yagnik Virani
+//ID  : A00227162
 
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
 import android.widget.RadioGroup;
+import android.view.MenuItem;
 import android.widget.TextView;
+import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity implements RadioGroup.OnCheckedChangeListener, View.OnClickListener  {
+public class MainActivity extends AppCompatActivity implements RadioGroup.OnCheckedChangeListener, View.OnClickListener {
     //declare all variable for both teams India and Canada
     private TextView teamCanadaTextView;
     private TextView teamIndiaTextView;
@@ -52,10 +58,11 @@ public class MainActivity extends AppCompatActivity implements RadioGroup.OnChec
 
     }
 
+
     @Override
     public void onCheckedChanged(RadioGroup radioGroup, int i) {
         //cases for all option to increase and decrease score
-        switch (i){
+        switch (i) {
             case 1:
                 Rise = 1;
                 break;
@@ -74,11 +81,12 @@ public class MainActivity extends AppCompatActivity implements RadioGroup.OnChec
         }
     }
 
+
     @Override
     public void onClick(View view) {
         int id = view.getId();
         //cases for all options such as increase and decrease for both teams
-        switch (id){
+        switch (id) {
             case R.id.India_buttonUp:
                 teamIndiaScore += Rise;
                 teamIndiaTextView.setText(Integer.toString(teamIndiaScore));
@@ -97,4 +105,28 @@ public class MainActivity extends AppCompatActivity implements RadioGroup.OnChec
                 break;
         }
     }
+
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.options_menu, menu);
+        return true;
+    }
+
+    public boolean onOptionsItemSelected(MenuItem item){
+        long id = item.getItemId();
+        if(id == R.id.settings){
+            Intent settings = new Intent(getApplicationContext(), SettingsActivity.class);
+            startActivity(settings);
+                     return true;
+
+        }
+        else if(id == R.id.About_menu){
+            Toast.makeText(
+                    this, "Name: Yagnik Virani \nStudent Id : A00227162 \nCourse code: IOT1009", Toast.LENGTH_LONG).show();
+            return true;
+        }
+        else{
+            return super.onOptionsItemSelected(item);
+        }
+    }
+
 }

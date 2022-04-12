@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- name: Yagnik Virani
+     ID  : A00227162
+-->
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <SwitchPreference
+        android:defaultValue="false"
+        android:key="Score_pref"
+        android:title="Score" />
+    <ListPreference
+        android:key="Increase_Values_pref"
+        android:title="Select"
+        android:summary="Increase score values "
+        android:entryValues="@array/increase_values"
+        android:entries="@array/increase_keys"
+        android:defaultValue="@string/Scores"
+        ></ListPreference>
+
+
+
+</PreferenceScreen>
